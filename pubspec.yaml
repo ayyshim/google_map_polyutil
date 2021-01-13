@@ -1,6 +1,6 @@
 name: google_map_polyutil
 description: Dart implementation of native google map utility class PolyUtil
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/ayyshim/google_map_polyutil
 
 environment:
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_maps_flutter: ^0.5.21+15
+  google_maps_flutter: ^1.0.10
   meta: ^1.1.8
 
 dev_dependencies:

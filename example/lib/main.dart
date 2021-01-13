@@ -28,14 +28,21 @@ class _HomeState extends State<Home> {
 
   void initAll() async {
     print("==== InitState ==== ");
-    print('Contains location: ${await GoogleMapPolyUtil.containsLocation(polygon: polyline, point: point)}');
-    print('Decode : ${await GoogleMapPolyUtil.decode(encodedPath: "???_ibE?_seK?_ibE")}');
-    print('Distance to line : ${await GoogleMapPolyUtil.distanceToLine(point: LatLng(0, 5), start: LatLng(0, 3), end: LatLng(0, 9))}');
+    print(
+        'Contains location: ${await GoogleMapPolyUtil.containsLocation(polygon: polyline, point: point)}');
+    print(
+        'Decode : ${await GoogleMapPolyUtil.decode(encodedPath: "???_ibE?_seK?_ibE")}');
+    print(
+        'Distance to line : ${await GoogleMapPolyUtil.distanceToLine(point: LatLng(0, 5), start: LatLng(0, 3), end: LatLng(0, 9))}');
     print('Encode : ${await GoogleMapPolyUtil.encode(path: polyline)}');
-    print('Is closed polygon : ${await GoogleMapPolyUtil.isClosedPolygon(poly: polyline)}');
-    print('Is location on edge : ${await GoogleMapPolyUtil.isLocationOnEdge(point: point, polygon: polyline)}');
-    print('Is location on path : ${await GoogleMapPolyUtil.isLocationOnPath(point: point, polygon: polyline)}');
-    print('Simplify : ${await GoogleMapPolyUtil.simplify(poly: polyline, tolerance: 100)}');
+    print(
+        'Is closed polygon : ${await GoogleMapPolyUtil.isClosedPolygon(poly: polyline)}');
+    print(
+        'Is location on edge : ${await GoogleMapPolyUtil.isLocationOnEdge(point: point, polygon: polyline)}');
+    print(
+        'Is location on path : ${await GoogleMapPolyUtil.isLocationOnPath(point: point, polygon: polyline)}');
+    print(
+        'Simplify : ${await GoogleMapPolyUtil.simplify(poly: polyline, tolerance: 100)}');
   }
 
   @override
